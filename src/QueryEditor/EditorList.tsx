@@ -18,6 +18,7 @@ export const EditorList = React.forwardRef(function EditorList<T>(
   ref: React.Ref<HTMLButtonElement>
 ) {
   const onAddItem = () => {
+    console.log("onAddItem");
     const newItems = [...items, {}];
 
     onChange(newItems);
